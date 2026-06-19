@@ -1,116 +1,120 @@
-**Incremental Stability and Cognitive Load in Natural Language**
+# Incremental Stability and Cognitive Load in Natural Language
 
 A computational framework for analyzing cross-linguistic word-order patterns through syntactic stability and cognitive processing dynamics.
 
-Overview
+---
 
-Natural languages exhibit recurring word-order patterns such as Subject-Verb-Object (SVO), Subject-Object-Verb (SOV), and Verb-Subject-Object (VSO). While these patterns have traditionally been studied through linguistic typology, this project investigates them from a computational perspective.
+## Overview
 
-This work introduces a framework that quantifies:
+Natural languages exhibit recurring word-order patterns such as SVO, SOV, and VSO. This project investigates these patterns from a computational perspective by introducing quantitative measures of structural stability and cognitive load during incremental sentence processing.
 
-* Structural stability during incremental sentence construction
-* Cognitive load associated with dependency resolution
-* Cross-linguistic variation in syntactic organization
+The framework combines dependency parsing, prefix-tree analysis, feature engineering, and statistical modeling to study language structure across multiple typologically distinct languages.
 
-The framework combines graph-based dependency representations, prefix-tree analysis, and statistical dimensionality reduction to study language structure across multiple typologically distinct languages.
+---
 
-⸻
+## Research Objectives
 
-Research Questions
+- Quantify syntactic organization using interpretable computational metrics.
+- Analyze cognitive load associated with dependency resolution.
+- Compare structural properties across different language families.
+- Recover known typological hierarchies using data-driven methods.
+- Evaluate whether proposed metrics align with language-processing performance.
 
-This project seeks to answer the following questions:
+---
 
-1. Can syntactic organization be quantified using interpretable computational metrics?
-2. Do different language families exhibit distinct stability and cognitive load profiles?
-3. Can these metrics recover established typological hierarchies?
-4. Do the proposed measures correlate with language processing performance?
+## Methodology
 
-⸻
+### Dataset
 
-Methodology
+The study evaluates six typologically distinct languages:
 
-Dataset
+- English
+- German
+- Finnish
+- Korean
+- Japanese
+- Arabic
 
-The study evaluates six typologically distinct languages representing major word-order families:
+### Framework Components
 
-* English
-* German
-* Finnish
-* Korean
-* Japanese
-* Arabic
+- Dependency Parsing
+- Prefix-Tree Construction
+- Incremental Stability Analysis
+- Cognitive Load Estimation
+- Cross-Linguistic Comparison
 
-Framework
+### Feature Engineering
 
-The proposed framework consists of:
+A set of **26 structural metrics** was designed to capture:
 
-* Dependency parsing
-* Prefix-tree construction
-* Incremental syntactic analysis
-* Stability Index computation
-* Incremental Cognitive Load estimation
+- Dependency organization
+- Branching behavior
+- Structural stability
+- Processing complexity
+- Syntactic efficiency
 
-Feature Engineering
+### Dimensionality Reduction
 
-A set of 26 structural metrics was designed to capture:
+Principal Component Analysis (PCA) was applied to identify dominant structural dimensions and explain variance across languages.
 
-* Dependency organization
-* Branching behavior
-* Stability dynamics
-* Cognitive processing effort
-* Structural efficiency
+---
 
-Dimensionality Reduction
+## Key Results
 
-Principal Component Analysis (PCA) was applied to identify dominant structural dimensions and reduce feature complexity.
+- Explained approximately **79% of total structural variance** using principal components.
+- Recovered established **VSO → SVO → SOV** typological hierarchies.
+- Successfully classified unseen languages through zero-shot projection.
+- Demonstrated strong agreement between framework predictions and parser-performance benchmarks.
+- Identified interpretable relationships between syntactic structure and cognitive processing effort.
 
-⸻
+---
 
-Key Results
+## Repository Structure
 
-* Explained approximately 79% of total structural variance through principal components.
-* Recovered established typological patterns including the VSO → SVO → SOV hierarchy.
-* Successfully classified previously unseen languages through zero-shot projection.
-* Demonstrated strong agreement between framework predictions and parser performance benchmarks.
-* Identified interpretable relationships between dependency structure, stability, and processing complexity.
-
-⸻
-
-Repository Structure
-
+```text
 .
-├── data/                 # Input datasets
-├── notebooks/            # Analysis notebooks
-├── src/                  # Core implementation
-├── results/              # Generated outputs and figures
-├── figures/              # Visualizations used in the paper
-├── paper/                # Research manuscript
+├── data/
+├── notebooks/
+├── src/
+├── results/
+├── figures/
+├── paper/
 └── README.md
+```
 
-⸻
+---
 
-Running the Project
+## Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/muditar12/Incremental-Stability-and-Cognitive-Load-in-Natural-Language.git
 cd Incremental-Stability-and-Cognitive-Load-in-Natural-Language
+```
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Run the analysis pipeline:
+---
 
+## Running the Analysis
+
+```bash
 python main.py
+```
 
-⸻
+---
 
-Contributions
+## Contributions
 
 This project introduces:
 
-* A novel Stability Index for measuring incremental syntactic organization.
-* An Incremental Cognitive Load metric grounded in dependency structure.
-* A computational framework for cross-linguistic typological analysis.
-* An interpretable methodology linking linguistic structure and processing complexity.
+- A novel **Stability Index** for measuring incremental syntactic organization.
+- An **Incremental Cognitive Load** metric grounded in dependency structure.
+- A computational framework for cross-linguistic typological analysis.
+- An interpretable methodology linking language structure and processing complexity.
+
