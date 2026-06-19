@@ -1,4 +1,4 @@
-Incremental Stability and Cognitive Load in Natural Language
+**Incremental Stability and Cognitive Load in Natural Language**
 
 A computational framework for analyzing cross-linguistic word-order patterns through syntactic stability and cognitive processing dynamics.
 
